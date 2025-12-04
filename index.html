@@ -1,97 +1,148 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANH THƠ</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hồ Sơ Anh Thơ</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: url('backatho.jpg');
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+    }
 
-    <style>
-        body {
-            background-image: url("backatho.jpg");
-            background-size: 100% 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            min-height: 100vh; 
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+    .card {
+        width: 70%;
+        max-width: 950px;
+        background: rgba(255,255,255,0.9);
+        margin: 50px auto;
+        border-radius: 10px;
+        padding: 30px;
+        display: flex;
+        gap: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        border: 3px solid #627d98;
+    }
 
-        .avatar {
-            width: 120px;
-            height: 120px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 3px solid #bcdcff;
-            display: block;
-            margin: 0 auto 10px auto;
-        }
+    .profile-img {
+        width: 260px;
+        height: 260px;
+        border-radius: 10px;
+        object-fit: cover;
+        border: 4px solid #bfcbe2;
+    }
 
-        .card {
-            width: 320px;
-            background: rgba(255, 255, 255, 0.25);
-            padding: 20px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            margin: 40px auto;
-            text-align: center;
-        }
+    .right-box {
+        width: 260px;
+        text-align: center;
+    }
 
-        h1 {
-            font-size: 30px;
-            color: white;
-            text-shadow: 0 0 10px #00aaff,
-                         0 0 20px #00aaff,
-                         0 0 30px #00aaff;
-            margin-bottom: 10px;
-        }
+    .name {
+        margin-top: 15px;
+        font-size: 26px;
+        font-weight: 700;
+        color: #2a3d55;
+    }
 
-        .subtitle {
-            background-color: #9387AB;
-            color: white;
-            padding: 10px;
-            border-radius: 10px;
-        }
+    /* sửa đúng cú pháp cho .role (giữ kiểu như yêu cầu trước) */
+    .role {
+        font-size: 20px;      /* Tăng kích thước chữ */
+        color: #444;
+        margin-top: 12px;     /* Tạo khoảng cách với tên */
+        font-weight: 600;
+    }
 
-        .container {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-top: 40px;
-        }
-    </style>
+    .mission {
+        margin-top: 11px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #444;
+    }
+
+    .left-box {
+        flex: 1;
+    }
+
+    .section-title {
+        margin-top: 20px;
+        font-size: 22px;
+        font-weight: 700;
+        color: #1c3453;
+    }
+
+    .info-list p {
+        margin: 6px 0;
+        font-size: 17px;
+        color: #333;
+    }
+
+    .space {
+        height: 25px;
+    }
+
+    .back-btn {
+        display: inline-block;
+        margin: 25px 0 0 50px;
+        padding: 10px 20px;
+        background: #2a4d69;
+        color: white;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .back-btn:hover {
+        background: #1d3550;
+    }
+
+    /* ----- CHỈ ĐỔI PHÔNG CHO KHỐI LIÊN HỆ ----- */
+    .contact-info {
+        font-family: Georgia, serif; /* phông mới cho Liên hệ */
+    }
+</style>
 </head>
 
 <body>
 
-    <div class="card">
-        <img src="avtatho.jpg" class="avatar">
-        <h1>NGUYỄN HOÀNG ANH THƠ</h1>
-<head>
-    <style>
-        .subtitle {
-            display: block !important;
-        }
+<a href="https://nhungo2210028-hash.github.io/uuujij/" class="back-btn">← Quay về trang chủ</a>
 
-        .subtitle p {
-            margin: 5px 0;  /* cho đẹp thôi, không bắt buộc */
-            display: block; /* ép mỗi p thành 1 dòng */
-        }
-    </style>
-</head>
-<body>
-    <div class="subtitle">
-        <p>Đường đời đưa đẩy đầy đau đớn, đi đâu để được đổi đời đây</p>
-        <p>Họ tên: Nguyễn Hoàng Anh Thơ</p>
-        <p>Năm sinh: 06/01/2008</p>
-        <p>Sở đoản: Toán, Tiếng Anh</p>
-        <p>ACB: 34344427</p>
-        <p>🔰Ac Chính Chủ🔰</p>
-        <p>👍🏻Đối Sao Đáp Vậy👍🏻</p>
-        <p>🖤Vạn Sự Tùy Duyên🖤</p>
-        <p>🌸 Hoa Rơi Cửa Phật 🌸</p>
+<div class="card">
+
+    <div class="left-box">
+        <div class="section-title">INFORMATION</div>
+        <div class="info-list">
+            <p><b>📅Ngày sinh:</b> 6/1/2008</p>
+            <p><b>♈️Cung hoàng đạo:</b> Ma Kết</p>
+            <p><b>🎹Sở thích:</b> Ngủ </p>
+            <p><b>🎓Nguyện vọng đại học:</b> Học Viện Tòa Án </p>
+            <p><b>🔑Châm ngôn:</b> Cái gì không biết thì hỏi </p>
+        </div>
+
+        <div class="space"></div>
+
+        <div class="section-title">CONTACT</div>
+        <!-- thêm class contact-info chỉ cho khối liên hệ -->
+        <div class="info-list contact-info">
+            <p><b>💌Email:</b> anhththonguyen@gmail.com</p>
+            <p><b>📞Phone:</b> 0965226746 </p>
+        </div>
     </div>
+
+    <div class="right-box">
+        <img src="avtatho.jpg" class="profile-img" alt="profile">
+        <div class="name">Nguyễn Hoàng Anh Thơ</div>
+        <div class="role">Thành Viên</div>
+        <div class="mission">Nhiệm vụ : Thiết kế Web Cá Nhân, Soạn Nội Dung Báo Cáo, Canva </div>
+    </div>
+
 </div>
+
+</body>
+</html>
+
 
 </body>
 </html>
